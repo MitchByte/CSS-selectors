@@ -1,0 +1,85 @@
+<!-- CSS selectors and specificity -->
+<!DOCTYPE html>
+<html>
+  <head>
+    
+  <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro&display=swap" rel="stylesheet">
+ 
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <h1>CSS selectors and specificity</h1>
+    
+    <p>In a CSS file a selector
+        is the first part of a CSS Rule. It is a structured 
+        element with different terms that tell the browser 
+        which HTML element you want to select and what  
+        kinf of CSS property values inside the rule should be
+        applied to them. The selected element are known as the 
+        subject of the selector.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Selector</th>
+          <th>Name</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>*</td>
+          <td>Universal Selector</td>
+          <td>targets any element</td>
+        </tr>
+        <tr>
+          <td>h1</td>
+          <td>Type selector</td>
+          <td>targets any element of type &lt;h1&gt;</td>
+        </tr>
+        <tr>
+          <td>.special</td>
+          <td>Class selector</td>
+          <td>targets all class="special" elements inside a HTML element</td>
+        </tr>
+        <tr>
+          <td>h1.special</td>
+          <td>Class selector</td>
+          <td>targets all class="special" elements inside a &lt;h1&gt; element</td>
+        </tr>
+        <tr>
+          <td>h1.special.name</td>
+          <td>Class selector</td>
+          <td>targets all class="special" AND class="name" elements inside a &lt;h1&gt; element<</td>
+        </tr>
+        <tr>
+          <td>#food</td>
+          <td>ID selector</td>
+          <td>tarets any element with the id="food"</td>
+        </tr>
+        <tr>
+          <td>a[title]</td>
+          <td>Attribute selector</td>
+          <td>targets elements based on the presence of
+             the attribute 'title' on an element </td>
+        </tr>
+        <tr>
+          <td>a[href="https://google.com"] </td>
+          <td>Attribute selector</td>
+          <td>targets based on the presence 
+            of an attribute with this value</td>
+        </tr>
+        <tr>
+          <td>a:hover</td>
+          <td>Pseudo-class selector</td>
+          <td>the target 'a' is styled by the 'hover' value </td>
+        </tr>
+        <tr>
+          <td>p::first-line</td>
+          <td>Pseudo-element selector</td>
+          <td>selects a certain part of an element and styles it</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </body>
+</html>
